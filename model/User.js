@@ -27,4 +27,10 @@ class User {
     deleteAddress(){
         this.addrress="";
     }
+    //.............
+    getAge(){ return this.age;}
+    setAge(age){ this.age=age;}
+    deleteAge(){ this.age=0;}
+
+    //.......
 };
