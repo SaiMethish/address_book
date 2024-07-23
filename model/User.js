@@ -2,7 +2,7 @@ class User {
     fullName="";
     addrress="";
     age=0;
-    number=0;
+    number="";
     state="";
     //read
     getFullName() {
@@ -33,4 +33,10 @@ class User {
     deleteAge(){ this.age=0;}
 
     //.......
+    getNumber(){ return this.number;}
+    setNumber(number){ this.number=number;}
+    deleteNumber(){this.number="";}
+    //......
+
+    
 };
