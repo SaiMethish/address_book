@@ -1,9 +1,20 @@
-class User{
-    constructor(fullName,addrress,age,number,state){
+class User {
+    fullName;
+    addrress;
+    age;
+    number;
+    state;
+    //read
+    getFullName() {
+        return this.fullName;
+    }
+    //create and update
+    setFullName(fullName) {
         this.fullName=fullName;
-        this.addrress=addrress;
-        this.age=age;
-        this.number=number;
-        this.state=state;
+    }
+    //delete 
+    deleteFullName(){
+        this.fullName="";
     }
 };
+
