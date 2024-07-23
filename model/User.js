@@ -38,5 +38,8 @@ class User {
     deleteNumber(){this.number="";}
     //......
 
-    
+    getState(){ return this.state;}
+    setState(state){ this.state=state;}
+    deleteState(){ this.state="";}
+    //.....
 };
