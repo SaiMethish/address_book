@@ -42,5 +42,9 @@ class User {
     setState(state){ this.state=state;}
     deleteState(){ this.state="";}
     //.....
+    printDetails(){
+        return `fullname= ${this.fullName} address= ${this.addrress} age= ${this.age}
+        number= ${this.number} state=${this.state}`;
+    }
 };
-module.exports={User};
+export default User;
