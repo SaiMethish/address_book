@@ -43,3 +43,4 @@ class User {
     deleteState(){ this.state="";}
     //.....
 };
+module.exports={User};
