@@ -41,27 +41,27 @@ const sortUser=(param)=>{
     let res;
     if(param=="fullName"){
         userArr.sort((a,b)=>{
-            return a.fullName<b.fullName;
+            return a.fullName.localCompare(b.fullName);
         });
     }
     if(param=="address"){
         userArr.sort((a,b)=>{
-            return a.address<b.address;
+            return a.address.localCompare(b.address);
         });
     }
     if(param=="age"){
         userArr.sort((a,b)=>{
-            return  parent(a.age)<parseInt(b.age);
+            return  parseInt(a.age)-parseInt(b.age);
         });
     }
     if(param=="number"){
         userArr.sort((a,b)=>{
-            return a.number<b.number;
+            return parseInt(a.number)-parseInt(b.number);
         });
     }
     if(param=="state"){
         userArr.sort((a,b)=>{
-            return a.state<b.state;
+            return a.state.localCompare(b.state);
         });
     }
 }

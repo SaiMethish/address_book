@@ -6,15 +6,12 @@ export default class User {
         this.number = "";
         this.state = "";
     }
-    //read
     getFullName() {
         return this.fullName;
     }
-    //create and update
     setFullName(fullName) {
         this.fullName = fullName;
     }
-    //delete 
     deleteFullName() {
         this.fullName = "";
     }
